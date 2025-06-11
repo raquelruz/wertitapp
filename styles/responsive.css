@@ -1,0 +1,16 @@
+/* Mobile First */
+
+/* Media query para dispositivos TABLET (mayores a 480px) */
+@media (min-width: 481px) {
+
+}
+
+/* Media query para dispositivos DESKTOP (mayores a 1024px) */
+@media (min-width: 1024px) {
+
+}
+
+/* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
+@media (min-width: 1440px) {
+    
+}

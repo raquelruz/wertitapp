@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wertitapp - Tu red social de viajes</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script type="module" defer></script>
+
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Wertitapp - Tu red social de viajes</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="nav-container">
+				<div class="logo-header-container">
+					<img src="" alt="Logo de Wertitapp" />
+				</div>
+
+				<button id="toggle-sidebar" class="icon-menu">&#9776;</button>
+
+				<aside class="sidebar">
+					<nav>
+						<h1>WERTITAPP</h1>
+
+						<h5>MENU</h5>
+
+						<ul>
+							<a href="#">Inicio</a>
+							<a href="#">Buscar destino</a>
+							<a href="#">Comunidad</a>
+							<a href="#">Calendario</a>
+							<a href="#">Ofertas</a>
+							<a href="#">Mapa</a>
+
+							<hr />
+
+							<a href="#">Mi perfil</a>
+							<a href="#">Contactos</a>
+							<a href="#">Próximos viajes</a>
+
+							<hr />
+							<a href="#">Cerrar sesión</a>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+		</header>
+
+		<main>
+			<section>
+				<div class="container">
+					<div class="head-container">
+						<h2>Descubre el mundo</h2>
+						<p>Texto descriptivo</p>
+					</div>
+
+					<div class="search-content">
+						<form id="search-form">
+							<label for="date-search">Fecha</label>
+							<input type="date" id="date-search" name="date-search" />
+
+							<label for="price-search">Precio</label>
+							<input
+								type="range"
+								id="price-search"
+								name="price-search"
+								min="0"
+								max="1000"
+								step="10"
+								oninput="valorPrecio.value = this.value"
+							/>
+							<output id="valorPrecio">500</output> €
+
+                            <label for="number-search">Personas</label>
+							<input type="number" id="number-search" name="number-search" />
+
+							<button type="submit" id="search-btn" class="search-btn">Buscar</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

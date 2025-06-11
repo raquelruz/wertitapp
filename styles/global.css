@@ -127,3 +127,108 @@ body .dont-show {
 
 	--container-width: 95%;
 }
+
+/* ---------------- STYLES ---------------- */
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: var(--spacing-xl);
+}
+
+.icon-menu {
+	display: block;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	z-index: 1101;
+	color: var(--primary-text-color);
+}
+
+.sidebar {
+	display: none;
+}
+
+.head-container {
+	height: 80vh;
+	background-image: url("/media/images/espigon-de-punta-umbria.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.head-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+}
+
+.head-content h2 {
+	font-size: 30px;
+}
+
+.head-content p {
+	font-size: 18px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-content {
+    display: flex;
+    justify-content: space-around;
+
+	width: 80%;
+
+    background-color: #FFF;
+	border: 1px solid white;
+    border-radius: 100px;
+
+    padding: 6px 20px;
+}
+
+.search-form {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    color: white;
+
+	width: 50%;
+}
+
+.date-label,
+.price-label,
+.number-label,
+.euro {
+    font-size: 10px;
+}
+
+#date-search,
+#price-search,
+#number-search,
+#price-value {
+    display: none;
+}
+
+.search-btn {
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border: none;
+
+    font-size: 10px;
+    border-radius: 6px;
+
+    padding: 6px 24px;
+}

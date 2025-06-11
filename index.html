@@ -24,7 +24,7 @@
 					<img src="" alt="Logo de Wertitapp" />
 				</div>
 
-				<button id="toggle-sidebar" class="icon-menu">&#9776;</button>
+				<button id="icon-menu" class="icon-menu">&#9776;</button>
 
 				<aside class="sidebar">
 					<nav>
@@ -58,32 +58,36 @@
 			<section>
 				<div class="container">
 					<div class="head-container">
-						<h2>Descubre el mundo</h2>
-						<p>Texto descriptivo</p>
-					</div>
+						<div class="head-content">
+							<h2>Descubre el mundo</h2>
+							<p>Texto descriptivo</p>
+						</div>
 
-					<div class="search-content">
-						<form id="search-form">
-							<label for="date-search">Fecha</label>
-							<input type="date" id="date-search" name="date-search" />
+						<div class="search-container">
+							<div class="search-content">
+								<form id="search-form">
+									<label for="date-search" class="date-label">Fecha</label>
+									<input type="date" id="date-search" name="date-search" />
 
-							<label for="price-search">Precio</label>
-							<input
-								type="range"
-								id="price-search"
-								name="price-search"
-								min="0"
-								max="1000"
-								step="10"
-								oninput="valorPrecio.value = this.value"
-							/>
-							<output id="valorPrecio">500</output> €
+									<label for="price-search" class="price-label">Precio</label>
+									<input
+										type="range"
+										id="price-search"
+										name="price-search"
+										min="0"
+										max="1000"
+										step="10"
+										oninput="valorPrecio.value = this.value"
+									/>
+									<output id="price-value">500</output> <span class="euro">€</span>
 
-                            <label for="number-search">Personas</label>
-							<input type="number" id="number-search" name="number-search" />
+									<label for="number-search" class="number-label">Personas</label>
+									<input type="number" id="number-search" name="number-search" />
 
-							<button type="submit" id="search-btn" class="search-btn">Buscar</button>
-						</form>
+									<button type="submit" id="search-btn" class="search-btn">Buscar</button>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
